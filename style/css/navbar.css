@@ -1,0 +1,39 @@
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+#mobile-menu {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#mobile-menu.closed {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#mobile-menu.open {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#mobile-menu a {
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#mobile-menu a:hover {
+  transform: scale(1.05);
+}
+
+#toggle-menu i {
+  transition: transform 0.2s ease-in-out;
+}
+
+#toggle-menu:hover i {
+  transform: scale(1.2);
+}
+
+#toggle-menu.fa-times i {
+  transform: rotate(180deg);
+}
